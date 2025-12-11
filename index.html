@@ -26,6 +26,7 @@
       margin: 0 auto;
       background-color: #efe4d3;
     }
+
     .top-bar {
       background-color: #e6d2b2;
       padding: 14px 20px;
@@ -40,13 +41,14 @@
       align-items: center;
     }
 
-    .top-bar li {
+    .top-bar a {
+      text-decoration: none;
+      color: #2b1f15;
       font-size: 13px;
-      cursor: pointer;
       transition: opacity 0.3s ease;
     }
 
-    .top-bar li:hover {
+    .top-bar a:hover {
       opacity: 0.7;
     }
 
@@ -130,6 +132,7 @@
       height: 100%;
       object-fit: cover;
     }
+
     .top3 {
       background-color: #e6d2b2;
       padding: 40px;
@@ -157,6 +160,7 @@
       box-shadow: 0 10px 20px rgba(0,0,0,0.25);
       object-fit: cover;
     }
+
     .genres {
       background-color: #3a2315;
       padding: 40px 0;
@@ -171,6 +175,7 @@
       letter-spacing: 0.18em;
       margin-bottom: 20px;
     }
+
     .genre-strip {
       height: 120px;
       margin-bottom: 15px;
@@ -195,6 +200,7 @@
     .genre-strip span {
       position: relative;
     }
+
     .stats {
       background-color: #efe4d3;
       padding: 50px 80px;
@@ -213,6 +219,7 @@
     td:last-child {
       text-align: right;
     }
+
     .film-strip {
       height: 40px;
       background-color: #5a2e14;
@@ -220,6 +227,7 @@
       margin-left: calc(50% - 50vw);
       margin-right: calc(50% - 50vw);
     }
+
     footer {
       background-color: #2b1f15;
       color: #efe4d3;
@@ -240,16 +248,17 @@
 
 <body>
 
+  <!-- TOP BAR NAV -->
   <div class="top-bar">
     <ul>
-      <li>PROFILE</li>
-      <li>TOP RATINGS</li>
-      <li>SEARCH</li>
+      <li><a href="https://scrlettsandy.github.io/index.html/">HOME</a></li>
+      <li><a href="https://scrlettsandy.github.io/profile.html/">PROFILE</a></li>
+      <li><a href="https://scrlettsandy.github.io/ratings.html/">TOP RATINGS</a></li>
+      <li><a href="https://scrlettsandy.github.io/search.html/">SEARCH</a></li>
     </ul>
   </div>
 
   <div class="container">
-
     <div class="hero">
       <h1>PROFILE</h1>
     </div>
@@ -266,13 +275,14 @@
     </div>
 
     <div class="top3">
-  <h3>TOP 3</h3>
-  <div class="poster-grid">
-    <img src="shining.jpg" alt="Movie poster for The Shining">
-    <img src="trueman.jpg" alt="Movie poster for The Truman Show">
-    <img src="foradream.jpg" alt="Movie poster for Requiem for a Dream">
-  </div>
-</div>
+      <h3>TOP 3</h3>
+      <div class="poster-grid">
+        <img src="shining.jpg" alt="Movie poster for The Shining">
+        <img src="trueman.jpg" alt="Movie poster for The Truman Show">
+        <img src="foradream.jpg" alt="Movie poster for Requiem for a Dream">
+      </div>
+    </div>
+
     <div class="genres">
       <h3>GENRES</h3>
       <div class="genre-strip" style="background-image:url('scary1.jpg')"><span>HORROR</span></div>
@@ -293,7 +303,6 @@
         <tr><td>Recently Added Films</td><td>10</td></tr>
       </table>
     </div>
-
   </div>
 
   <div class="film-strip"></div>
@@ -312,6 +321,5 @@
       © 2025 CURATED FRAMES. ALL RIGHTS RESERVED
     </p>
   </footer>
-
 </body>
 </html>
